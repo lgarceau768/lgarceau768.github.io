@@ -1,0 +1,13 @@
+.main {
+    background-image: url("/imgs/bkg.png");
+    background-repeat: 'repeat';
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+    margin-left: -2px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 200%;
+}
