@@ -59,8 +59,7 @@ export default function FirstCard(props){
                             visibleSlides={3}
                             playDirection='forward'
                             infinite={true}
-                            style={{height: '400px'}}
-                            >
+                            style={{height: '400px'}}>
                             <Slider>
                                 <Slide index={1}>
                                     <img src={slider3} alt="Slider3" className="sliderImg"/>                                

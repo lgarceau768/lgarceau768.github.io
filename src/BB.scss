@@ -8,6 +8,45 @@
     left: 0;
     margin-left: -2px;
     overflow-x: hidden;
-    overflow-y: scroll;
-    height: 200%;
+    height: 100vh;
+    padding: 0px;
+}
+
+.videoContainer {
+    margin-left: -160px;
+    width: 115%;
+    height: 40rem;
+}
+
+.videoNext {
+    position: relative;
+    top: -40rem;
+    left: 127rem;
+    background-color: #FFAD33;
+    width: 2.25rem;
+    height: 2.125rem;
+    border: 2px solid white;
+    color: white;
+    border-radius: 6px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.videoBack {   
+    position: relative;
+    top: -40rem;
+    left: 9rem;
+    background-color: #FFAD33;
+    width: 2.25rem;
+    height: 2.125rem;
+    border: 2px solid white;
+    color: white;
+    border-radius: 6px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cardDesc {
+    font-size: 1.563rem;
+    font-weight: normal;
 }

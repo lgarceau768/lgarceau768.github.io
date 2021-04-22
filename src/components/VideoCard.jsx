@@ -10,7 +10,7 @@ export default function VideoCard(props){
         <div className="tallCard" style={{backgroundColor: props.color}}>
             <ReactPlayer 
                 url={props.url}
-                width="19.938rem"
+                width="19.875rem"
                 height="19.875rem"
                 controls={true}
                 className="player"/>

@@ -48,7 +48,7 @@ export default function TopBar(props) {
                         <Link to="scan">
                             <p className="navText">Scan</p>
                         </Link>
-                        <Line color={lineColor} height="2.5rem"/>
+                        <Line color="" height="2.5rem"/>
                         <Link to="vault">
                             <p className="navText">Vault</p>
                         </Link>
