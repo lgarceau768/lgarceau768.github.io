@@ -1,29 +1,23 @@
 import { ButtonBack, ButtonNext, CarouselProvider, Slide, Slider } from 'pure-react-carousel'
 import React from 'react'
-import './BB.scss'
+import '../styles/BB.scss'
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import FirstCard from './components/FirstCard'
-import TM from './components/TM'
-import TopBar from './components/TopBar'
-import VideoCard from './components/VideoCard'
-import VideoContainer from './components/VideoContainer';
-import challenges from './imgs/cards/challenges.png'
-import scan from './imgs/cards/scan.png'
-import vault from './imgs/cards/vault.png'
-import marketplace from './imgs/cards/marketplace.png'
-import designer from './imgs/cards/designer.png'
-import bin from './imgs/cards/bin.png'
-import coming_soon from './imgs/cards/coming_soon.png'
-import { LeftImageCard, RightImageCard } from './components/ImageCard';
-import Footer from './components/Footer';
+import FirstCard from '../components/FirstCard'
+import VideoContainer from '../components/VideoContainer';
+import challenges from '../imgs/cards/challenges.png'
+import scan from '../imgs/cards/scan.png'
+import vault from '../imgs/cards/vault.png'
+import marketplace from '../imgs/cards/marketplace.png'
+import designer from '../imgs/cards/designer.png'
+import bin from '../imgs/cards/bin.png'
+import coming_soon from '../imgs/cards/coming_soon.png'
+import { LeftImageCard, RightImageCard } from '../components/ImageCard';
 
 export default class BB extends React.Component {
 
   render(){
     return (
       <div className="main">
-        <TopBar/>
-        <TM/>
         <FirstCard/>
         <VideoContainer/>
         <LeftImageCard
@@ -39,6 +33,7 @@ export default class BB extends React.Component {
           shadow={[231, 68, 72]}
           color="#E74448"/>
         <RightImageCard
+          id="scan"
           img={scan}
           alt="Scan"
           title="Scan!"
@@ -52,6 +47,7 @@ export default class BB extends React.Component {
           shadow={[255, 209, 102]}
           color="#FFD166"/>
         <LeftImageCard
+          id="vault"
           img={vault}
           alt="My Vault"
           title="Bank Your Vault"
@@ -65,6 +61,7 @@ export default class BB extends React.Component {
           shadow={[91, 161, 214]}
           color="#5BA1D6"/>
         <RightImageCard
+          id="marketplace"
           img={marketplace}
           alt="Marketplace"
           title="Discover New Sets"
@@ -77,6 +74,7 @@ export default class BB extends React.Component {
           shadow={[6, 214, 160]}
           color="#06D6A0"/>
         <LeftImageCard
+          id="designer"
           img={designer}
           alt="Designer"
           title="Design Your Story"
@@ -116,7 +114,7 @@ export default class BB extends React.Component {
           }
           shadow={[255, 224, 102]}
           color="#FFE066"/>
-        <Footer/>
+        
       </div>
     )
   }

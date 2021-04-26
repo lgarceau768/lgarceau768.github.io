@@ -1,6 +1,6 @@
 import { ButtonBack, ButtonNext, CarouselProvider, Slide, Slider } from 'pure-react-carousel'
 import React from 'react'
-import '../BB.scss'
+import '../styles/BB.scss'
 import VideoCard from './VideoCard'
 
 export default function VideoContainer(props) {

@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import BB from './BB';
+import Site from './Site';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BB />
+    <Site />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -4,7 +4,7 @@
    height:  2.225rem;
    background-color: #362D2D;
    display: flex;
-   justify-content: center;
+   justify-content: space-around;
 }
 
 .tm {
@@ -13,4 +13,12 @@
     font: 'Muli';
     font-size:  0.625rem;
     color: rgba(255, 255, 255, 0.4);
+}
+
+.bigTM {
+    font: 'Muli';
+    font-size: 1.375rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 0px;
+    
 }

@@ -6,7 +6,7 @@ function LeftImageCard(props){
 
 
     return (
-        <div className="imageCard" style={{
+        <div className="imageCard" id={props.id} style={{
             border: `8px solid ${props.color}`,
             boxShadow: `5px 5px 10px rgba(${props.shadow[0]}, ${props.shadow[1]}, ${props.shadow[2]}, 0.5)`
         }}>
@@ -27,7 +27,7 @@ function LeftImageCard(props){
 function RightImageCard(props) {
 
     return (
-        <div className="imageCard" style={{
+        <div className="imageCard" id={props.id} style={{
             border: `8px solid ${props.color}`,
             boxShadow: `5px 5px 10px rgba(${props.shadow[0]}, ${props.shadow[1]}, ${props.shadow[2]}, 0.5)`
         }}>
@@ -45,7 +45,23 @@ function RightImageCard(props) {
     )
 }
 
+function CompactImageCard(props) {
+    return (
+        <div className="imageCardCompact" id={props.id} style={{
+            border: `8px solid ${props.color}`,
+            boxShadow: `5px 5px 10px rgba(${props.shadow[0]}, ${props.shadow[1]}, ${props.shadow[2]}, 0.5)`,
+        }}>
+            <div className="imageCardText">
+                <p className="cardTitle" style={{fontWeight: 'normal'}}>{props.title}</p>
+                {props.desc}
+            </div>
+            <img src={props.img} alt={props.alt} className="imageCompact"/>
+        </div>
+    )
+}
+
 export {
     LeftImageCard,
-    RightImageCard
+    RightImageCard, 
+    CompactImageCard
 }

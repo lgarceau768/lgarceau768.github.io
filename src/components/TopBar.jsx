@@ -6,6 +6,7 @@ import hamburger from '../imgs/hamburger.png';
 import Spacer from 'react-spacer';
 import Line from './Line';
 import { Link } from 'react-scroll';
+import { Link as NavLink } from 'react-router-dom'
 
 export default function TopBar(props) {
     const [screen, setScreen] = useState(window.innerWidth > 720 ? 'large': 'small')
@@ -17,6 +18,33 @@ export default function TopBar(props) {
 
     const openMenu = () => {
         console.log("menu opened")
+    }
+
+    const scrollTo = (path) => {
+        switch (path) {
+            case 'scan':
+                scrollY(2500)
+                break;
+            case 'vault':
+                scrollY(3000)
+                break
+            case 'marketplace':
+                scrollY(3600)
+                break
+            case 'designer':
+                scrollY(4200)
+                break
+            default:
+                break;
+        }
+    }
+
+    const scrollY = (y) => {
+        window.scrollTo({
+            left: 0,
+            top: y,
+            behavior: 'smooth'
+        })
     }
 
     useLayoutEffect(() => {
@@ -31,11 +59,13 @@ export default function TopBar(props) {
 
     return (
         <div className="mainBar">
-                {screen == "large" ?
-                    <img src={logo} alt="BB Logo" className="mainLogo"/>
-                : 
-                    <img src={icon} atl="BB Icon" className="icon"/>
-                }
+                <NavLink to="/">
+                    {screen == "large" ?
+                        <img src={logo} alt="BB Logo" className="mainLogo"/>
+                    : 
+                        <img src={icon} alt="BB Icon" className="mainLogoIcon"/>
+                    }
+                </NavLink>
                 <Spacer grow='0.75'/>
                 {screen == 'small' ?
                     <div className="particles">
@@ -45,31 +75,33 @@ export default function TopBar(props) {
                     </div>   
                 : 
                     <div className="textNav">
-                        <Link to="scan">
+                        <div onClick={() => scrollTo("scan")}>
                             <p className="navText">Scan</p>
-                        </Link>
-                        <Line color="" height="2.5rem"/>
-                        <Link to="vault">
+                        </div>
+                        <Line color="#FFD166" height="2.5rem"/>
+                        <div onClick={() => scrollTo("vault")}>
                             <p className="navText">Vault</p>
-                        </Link>
-                        <Line color={lineColor} height="2.5rem"/>
-                        <Link to="designer">
+                        </div>
+                        <Line color="#F25F5C" height="2.5rem"/>
+                        <div onClick={() => scrollTo("designer")}>
                             <p className="navText">Designer</p>
-                        </Link>
-                        <Line color={lineColor} height="2.5rem"/>
-                        <Link to="martetplace">
+                        </div>
+                        <Line color="#06D6A0" height="2.5rem"/>
+                        <div onClick={() => scrollTo("marketplace")}>
                             <p className="navText">MarketPlace</p>
-                        </Link>
-                        <Line color={lineColor} height="2.5rem"/>
-                        <Link to="how to">
+                        </div>
+                        <Line color="#5BA1D6" height="2.5rem"/>
+                        <NavLink to="/howto">
                             <p className="navText">How To</p>
-                        </Link>
+                        </NavLink>
                     </div>
                 } 
                 <div className="particles2">
-                    <div className="signUpBox">
-                        <p className="signUpTxt">Sign Up Now</p>    
-                    </div>    
+                    <NavLink to="sign_up">
+                        <div className="signUpBox">
+                            <p className="signUpTxt">Sign Up Now</p>    
+                        </div>    
+                    </NavLink>
                 </div>            
             </div>
     )

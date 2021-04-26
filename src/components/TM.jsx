@@ -10,6 +10,9 @@ export default function TM(props) {
             <br></br>
             Companies which does not sponsor, authorize or endorse this website or application.
             </p>
+            <p className="bigTM">
+                Patent Pending
+            </p>
         </div>
     )
 }

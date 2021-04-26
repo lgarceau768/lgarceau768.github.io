@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.yellowContainer {
+    width: 107.75rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFE066;
+    border-radius: 43px;
+    border: 5px solid white;
+    margin-bottom: 64px;
+    margin-top: 12px;
+}
+
+.title {
+    font: 'Muli';
+    text-align: center;
+    font-weight: bold;
+    font-size: 4.625rem;
+}

@@ -5,6 +5,7 @@ import '../styles/footer.scss'
 import ig from '../imgs/ig.png'
 import world from '../imgs/world.png'
 import twitter from '../imgs/twitter.png'
+import { Link } from 'react-router-dom'
 
 
 export default function Footer(props) {
@@ -37,12 +38,12 @@ export default function Footer(props) {
                 </p>
             </div>
             <div className="navButtonsGrid">
-                <p className="navBtn" onClick={() => navigate("home")}>Home</p>
+                <Link to="/"><p className="navBtn">Home</p></Link>
                 <p className="navBtn" onClick={() => navigate("guidlines")}>Guidlines</p>
-                <p className="navBtn" onClick={() => navigate("about")}>About</p>
+                <Link to="/about"><p className="navBtn">About</p></Link>
                 <p className="navBtn" onClick={() => navigate("contact")}>Contact</p>
                 <p className="navBtn" onClick={() => navigate("policy")}>Privacy Policy</p>
-                <p className="navBtn" onClick={() => navigate("help")}>Help</p>
+                <Link to="/howto"><p className="navBtn">Help</p></Link>
             </div>  
             <div className="iconDisp">
                 <img src={twitter} alt="Twitter" onClick={() => openLink("www.twitter.com")} className="iconImg"/> 
