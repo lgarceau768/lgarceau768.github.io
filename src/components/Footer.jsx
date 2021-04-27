@@ -41,8 +41,8 @@ export default function Footer(props) {
                 <Link to="/"><p className="navBtn">Home</p></Link>
                 <p className="navBtn" onClick={() => navigate("guidlines")}>Guidlines</p>
                 <Link to="/about"><p className="navBtn">About</p></Link>
-                <p className="navBtn" onClick={() => navigate("contact")}>Contact</p>
-                <p className="navBtn" onClick={() => navigate("policy")}>Privacy Policy</p>
+                <p className="navBtn" onClick={() => window.open('mailto:info@brickbanker.com')}>Contact</p>
+                <Link to="/policy"><p className="navBtn">Privacy Policy</p></Link>
                 <Link to="/howto"><p className="navBtn">Help</p></Link>
             </div>  
             <div className="iconDisp">

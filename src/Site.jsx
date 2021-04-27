@@ -8,6 +8,7 @@ import './styles/BB.scss'
 import HowTo from './screens/HowTo'
 import About from './screens/About'
 import Account from './screens/Account'
+import License from './screens/License'
 
 export default class Site extends React.Component {
 
@@ -21,7 +22,7 @@ export default class Site extends React.Component {
                         <Route path="/howto" exact component={() => <HowTo/>}/>
                         <Route path="/about" exact component={() => <About/>}/>
                         <Route path="/signup" exact component={() => <BB/>}/>
-                        <Route path="/policy" exact component={() => <BB/>}/>
+                        <Route path="/policy" exact component={() => <License/>}/>
                         <Route path="/sign_up" exact component={() => <Account/>}/>
                     </Switch>
                     <Footer/>

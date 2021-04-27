@@ -1,11 +1,7 @@
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 
-.yellowContainer {
-    width: 107.75rem;
+.smallYellow {
+    margin-left: auto;
+    margin-right: auto;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -14,12 +10,17 @@
     border: 5px solid white;
     margin-bottom: 64px;
     margin-top: 12px;
+    margin-top: 128px;
+    width: 65.875rem;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
 }
 
-.title {
+p {
     font: 'Muli';
-    text-align: center;
-    font-weight: bold;
-    font-size: 4.625rem;
 }
+
+.question {
+    font-size: 1.875rem;
+    text-align: center;
+}
+

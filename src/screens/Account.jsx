@@ -123,9 +123,9 @@ export default function Account(props) {
                     : 
                         <div></div>
                     }
-                    {step == 0 ?
-                        <p className="goToForgot" onClick={() => setStep(1)}>
-                            Forgot Password?
+                    {step == 0  || step == 1 ?
+                        <p className="goToForgot" onClick={() => setStep(step == 0 ? 1 : 2)}>
+                            {step == 0 ? 'Forgot Password?' : 'Recover Account'}
                         </p>
                     : <div></div>}
                     <div className="btnContainer">
