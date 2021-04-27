@@ -1,7 +1,12 @@
 import React from 'react'
 import '../styles/BB.scss'
 import '../styles/howto.scss' 
-import scan from '../imgs/cards/scan.png'
+import one from '../imgs/howto/1.png'
+import two from '../imgs/howto/2.png'
+import three from '../imgs/howto/3.png'
+import four from '../imgs/howto/4.png'
+import five from '../imgs/howto/5.png'
+import six from '../imgs/howto/6.png'
 import { CompactImageCard } from '../components/ImageCard'
 import HLine from '../components/HLine'
 
@@ -13,7 +18,7 @@ export default function HowTo(props) {
             <div className="yellowContainer">
                 <p className="title">HOW TO</p>
                 <CompactImageCard 
-                    img={scan}
+                    img={one}
                     alt="Join!"
                     title="Join Brickbanker"
                     desc={
@@ -27,7 +32,7 @@ export default function HowTo(props) {
                     color="#F9E92F"/>
                 <HLine color="#707070" width="52.813rem" height="2px" className="howToDivider"/>
                 <CompactImageCard 
-                    img={scan}
+                    img={two}
                     alt="Bank!"
                     title="Bank Your First Piece"
                     desc={
@@ -42,7 +47,7 @@ export default function HowTo(props) {
                     color="#F9E92F"/>
                 <HLine color="#707070" width="52.813rem" height="2px" className="howToDivider"/>
                 <CompactImageCard 
-                    img={scan}
+                    img={three}
                     alt="Vault!"
                     title="My Vault"
                     desc={
@@ -58,7 +63,7 @@ export default function HowTo(props) {
                     color="#F9E92F"/>
                 <HLine color="#707070" width="52.813rem" height="2px" className="howToDivider"/>
                 <CompactImageCard 
-                    img={scan}
+                    img={four}
                     alt="BIN!"
                     title="Bin Label Creation"
                     desc={
@@ -73,7 +78,7 @@ export default function HowTo(props) {
                     color="#F9E92F"/>
                 <HLine color="#707070" width="52.813rem" height="2px" className="howToDivider"/>
                 <CompactImageCard 
-                    img={scan}
+                    img={five}
                     alt="Design!"
                     title="Designer"
                     desc={
@@ -87,7 +92,7 @@ export default function HowTo(props) {
                     color="#F9E92F"/>                
                 <HLine color="#707070" width="52.813rem" height="2px" className="howToDivider"/>
                 <CompactImageCard 
-                    img={scan}
+                    img={six}
                     alt="MarketPlace!"
                     title="MarketPlace"
                     desc={
