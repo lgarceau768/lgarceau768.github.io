@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.0fcc0982.chunk.css",
-    "main.js": "/static/js/main.be72f844.chunk.js",
+    "main.css": "/static/css/main.fe18c715.chunk.css",
+    "main.js": "/static/js/main.42eff451.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.10f8e470.js",
     "static/css/2.777b75a5.chunk.css": "/static/css/2.777b75a5.chunk.css",
-    "static/js/2.6442a8c6.chunk.js": "/static/js/2.6442a8c6.chunk.js",
+    "static/js/2.df811003.chunk.js": "/static/js/2.df811003.chunk.js",
     "index.html": "/index.html",
-    "static/js/2.6442a8c6.chunk.js.LICENSE.txt": "/static/js/2.6442a8c6.chunk.js.LICENSE.txt",
+    "static/js/2.df811003.chunk.js.LICENSE.txt": "/static/js/2.df811003.chunk.js.LICENSE.txt",
     "static/media/1.214e0efd.png": "/static/media/1.214e0efd.png",
     "static/media/10.f6070bb7.png": "/static/media/10.f6070bb7.png",
     "static/media/11.69e1c991.png": "/static/media/11.69e1c991.png",
@@ -44,7 +44,7 @@
     "static/media/9.8ff4e962.png": "/static/media/9.8ff4e962.png",
     "static/media/bin.d89189ae.png": "/static/media/bin.d89189ae.png",
     "static/media/binSmall.a5f81e50.png": "/static/media/binSmall.a5f81e50.png",
-    "static/media/index.css": "/static/media/bkg.a37d6094.png",
+    "static/media/index.css": "/static/media/bkg.8e9ef210.png",
     "static/media/challenges.ab1c0111.png": "/static/media/challenges.ab1c0111.png",
     "static/media/challengesSmall.a8061ed0.png": "/static/media/challengesSmall.a8061ed0.png",
     "static/media/coming_soon.ab9a7ac8.png": "/static/media/coming_soon.ab9a7ac8.png",
@@ -53,7 +53,7 @@
     "static/media/designerSmall.1ff6d4dd.png": "/static/media/designerSmall.1ff6d4dd.png",
     "static/media/detection.5fea935e.png": "/static/media/detection.5fea935e.png",
     "static/media/icon.ceaf7f44.png": "/static/media/icon.ceaf7f44.png",
-    "static/media/logo.d5af1504.png": "/static/media/logo.d5af1504.png",
+    "static/media/logo.828a2e2b.png": "/static/media/logo.828a2e2b.png",
     "static/media/marketplace.eca8f798.png": "/static/media/marketplace.eca8f798.png",
     "static/media/marketplaceSmall.67a6b2cb.png": "/static/media/marketplaceSmall.67a6b2cb.png",
     "static/media/scan.f5a55c0c.png": "/static/media/scan.f5a55c0c.png",
@@ -65,8 +65,8 @@
   "entrypoints": [
     "static/js/runtime-main.10f8e470.js",
     "static/css/2.777b75a5.chunk.css",
-    "static/js/2.6442a8c6.chunk.js",
-    "static/css/main.0fcc0982.chunk.css",
-    "static/js/main.be72f844.chunk.js"
+    "static/js/2.df811003.chunk.js",
+    "static/css/main.fe18c715.chunk.css",
+    "static/js/main.42eff451.chunk.js"
   ]
 }
