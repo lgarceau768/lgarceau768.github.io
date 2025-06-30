@@ -1,59 +1,69 @@
 # Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
+A professional, open-source portfolio website built with Angular and Angular Material. Easily showcase your skills, projects, resume, and contact information with a modern, responsive design.
 
-## Development server
+## Features
+- **About**: Brief bio, skills, and interests
+- **Projects**: Showcase of personal/professional projects with GitHub and live demo links
+- **Resume**: Downloadable PDF and/or interactive resume
+- **Contact**: Contact form and quick links to your platforms
+- **Dark Mode**: Theme switcher for light/dark mode (Angular Material theming)
+- **Responsive**: Mobile-friendly and accessible
+- **Easy Customization**: Update content, colors, and branding easily
 
-To start a local development server, run:
+## Tech Stack
+- [Angular](https://angular.io/) (v19+)
+- [Angular Material](https://material.angular.io/)
+- SCSS for styling
+- TypeScript
 
+## Getting Started
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18+ recommended)
+- [Angular CLI](https://angular.io/cli)
+
+### Installation
+```bash
+git clone https://github.com/<your-username>/portfolio.git
+cd portfolio
+git checkout setup-readme
+npm install
+```
+
+### Development Server
 ```bash
 ng serve
 ```
+Visit [http://localhost:4200](http://localhost:4200) in your browser.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+### Building for Production
 ```bash
-ng generate component component-name
+ng build --configuration production
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Branching Strategy
+- `main`: Production-ready code
+- `develop`: Active development
+- `setup-readme` (feature branch): Updating documentation and setup
+- Use feature branches for new features or fixes, then open a PR to `develop` or `main` as appropriate.
 
-```bash
-ng generate --help
-```
+## Contributing
+Contributions are welcome! Please open issues or pull requests. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-## Building
+## Customization
+- Update content in the `/src/app` directory
+- Change colors and branding in `src/styles.scss` and Angular Material theme files
+- Add your resume PDF to the `assets` folder
+- Update social/contact links in the Contact section
 
-To build the project run:
+## License
+MIT License — see [LICENSE](LICENSE)
 
-```bash
-ng build
-```
+## Contact & Social
+- [LinkedIn](https://linkedin.com/in/lukegarceau)
+- [GitHub](https://github.com/<your-username>)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Built with ❤️ using Angular.
